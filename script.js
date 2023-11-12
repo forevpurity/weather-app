@@ -12,7 +12,7 @@ const humid = document.querySelector(".humid");
 
 const fetchWeatherData = async (location) => {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=cbc854fcf59a4aeba0791823231011&q=${location}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=cbc854fcf59a4aeba0791823231011&q=${location}&aqi=no`
   );
   const weatherData = await response.json();
   return weatherData;
